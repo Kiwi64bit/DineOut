@@ -1,0 +1,2408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dine Out</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="shortcut icon" href="assets/images/icons/hamburger-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/keyframes.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/bootstrap.bundle.js" defer></script>
+</head>
+
+<body data-bs-theme="dark">
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="sideNav" aria-labelledby="sideNavLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="sideNavLabel">
+                <img src="assets/images/logo.png" alt="logo">
+            </h5>
+            <button type="button" class="btn border-0 custom-btn-close ms-auto fs-4 text-main"
+                data-bs-dismiss="offcanvas" aria-label="Close">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="sections-links list-unstyled d-flex flex-column gap-2 fs-5">
+                <li><a class="text-decoration-none" href="#home">Home</a></li>
+                <li><a class="text-decoration-none" href="#about">About</a></li>
+                <li><a class="text-decoration-none" href="#testimonials">Testimonials</a></li>
+                <li><a class="text-decoration-none" href="#menu">Menu</a></li>
+                <li><a class="text-decoration-none" href="#team">Team</a></li>
+                <li><a class="text-decoration-none" href="#orderNow">Order Now</a></li>
+            </ul>
+            <ul class="social-links list-unstyled d-flex gap-2">
+                <li><a class="text-decoration-none" style="color: #1877f2;" href="#"><i
+                            class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a class="text-decoration-none" style="color: #c13584;" href="#"><i
+                            class="fa-brands fa-instagram"></i></a></li>
+                <li><a class="text-decoration-none" style="color: #14171a;" href="#"><i
+                            class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a class="text-decoration-none" style="color: #25d366;" href="#"><i
+                            class="fa-brands fa-whatsapp"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <header class="vh-100">
+        <nav class="navbar fixed-top position-absolute py-3 bg-body-transparent">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/logo.png" alt="logo">
+                </a>
+                <button class="btn btn-transparent border-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#sideNav" aria-controls="sideNav">
+                    <span class="custom-nav-icon">
+                        <span class="bars bg-main"></span>
+                        <span class="bars bg-main"></span>
+                        <span class="bars bg-main"></span>
+                    </span>
+                </button>
+            </div>
+        </nav>
+
+        <div id="carouselExample" class="carousel slide h-100" data-bs-ride="carousel">
+            <div class="carousel-inner h-100">
+                <div class="carousel-item overflow-hidden h-100 background-center darken active"
+                    style="background-image: url(assets/images/background/bg_slider1.jpg);" data-bs-interval="5000">
+                    <div class="container h-100 text-center d-flex flex-column 
+                        justify-content-center align-items-center">
+                        <h1 class="fs-xl">Dine Out Restaurant</h1>
+                        <p class="fs-xs w-50">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, distinctio delectus
+                            laborum voluptatem consequuntur tempora suscipit iusto?
+                        </p>
+                        <button class="btn-custom-1 rounded-pill fs-6">Our Menu</button>
+                    </div>
+                </div>
+                <div class="carousel-item overflow-hidden h-100 background-center darken"
+                    style="background-image: url(assets/images/background/bg_slider2.jpg);" data-bs-interval="5000">
+                    <div class="container h-100">
+                        <div class="row h-100">
+                            <div class="col-12 col-md-6 h-100 text-center d-flex flex-column 
+                                justify-content-center align-items-center">
+                                <div class="top-text">
+                                    <img src="assets/images/pizza.png" alt="" class="pizza img-fluid w-75">
+                                    <h2 class="font-poppins fs-l fw-bold">
+                                        BUY GET <br>
+                                        ONE FREE
+                                    </h2>
+                                </div>
+                                <hr class="custom-line">
+                                <div class="bottom-text">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, sit.</p>
+                                    <h2 class="h1 font-poppins text-main">+201234567890</h2>
+                                    <button class="btn-custom-1 rounded-pill fs-6">About Us</button>
+                                </div>
+                                <hr class="custom-line">
+                            </div>
+                            <div class="col-6 d-none h-100 d-md-flex justify-content-center align-items-center">
+                                <img src="assets/images/pz.png" alt="" class="img-fluid spinner-reverse">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item overflow-hidden h-100 background-center darken"
+                    style="background-image: url(assets/images/background/bg_slider3.png);" data-bs-interval="5000">
+                    <div class="container h-100">
+                        <div class="row h-100">
+                            <div class="col-6 d-none h-100 d-md-flex justify-content-center align-items-center">
+                                <img src="assets/images/burger.png" alt="" class="burger w-100"
+                                    style="max-width: 500px;">
+                            </div>
+                            <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-start">
+                                <div class="top-text">
+                                    <h2 class="font-poppins fs-m fw-bold">
+                                        ENJOY BURGER MAKE <br>
+                                        YOUR TUMMY HAPPY
+                                    </h2>
+                                </div>
+                                <hr class="custom-line">
+                                <div class="bottom-text">
+                                    <p class="fs-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+                                        fugiat incidunt
+                                        vitae quibusdam aliquam unde voluptatem a soluta et consequatur!</p>
+                                    <ul class="row list-unstyled text-center">
+                                        <li class="col" style="--delay: 0;">
+                                            <img src="assets/images/icons/delicious-icon.png" alt="">
+                                            <h3>Delicious</h3>
+                                        </li>
+                                        <li class="col" style="--delay: 1;">
+                                            <img src="assets/images/icons/fresh-icon.png" alt="">
+                                            <h3>Fresh</h3>
+                                        </li>
+                                        <li class="col" style="--delay: 2;">
+                                            <img src="assets/images/icons/organic-icon.png" alt="">
+                                            <h3>Organic</h3>
+                                        </li>
+                                    </ul>
+                                    <button class="btn-custom-1 rounded-pill fs-6">Our Menu</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="custom-carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                data-bs-slide="prev">
+                <span class="fs-6" aria-hidden="true"><i class="fa-solid fa-angle-left"></i></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="custom-carousel-control-next" type="button" data-bs-target="#carouselExample"
+                data-bs-slide="next">
+                <span class="fs-6" aria-hidden="true"><i class="fa-solid fa-angle-right"></i></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </header>
+
+    <section id="products">
+        <ul class="row g-0 flex-nowrap list-unstyled overflow-auto">
+            <li class="col p-3 text-center">
+                <img src="assets/images/icons/pizza-icon.png" alt="">
+                <h4>Pizza</h4>
+            </li>
+            <li class="col p-3 text-center">
+                <img src="assets/images/icons/hamburger-icon.png" alt="">
+                <h4>Burgers</h4>
+            </li>
+            <li class="col p-3 text-center">
+                <img src="assets/images/icons/chicken-icon.png" alt="">
+                <h4>Chicken</h4>
+            </li>
+            <li class="col p-3 text-center">
+                <img src="assets/images/icons/taco-icon.png" alt="">
+                <h4>Taco</h4>
+            </li>
+            <li class="col p-3 text-center">
+                <img src="assets/images/icons/salad-icon.png" alt="">
+                <h4>Salad</h4>
+            </li>
+            <li class="col p-3 text-center">
+                <img src="assets/images/icons/fried-potatoes-icon.png" alt="">
+                <h4>Fries</h4>
+            </li>
+            <li class="col p-3 text-center">
+                <img src="assets/images/icons/drink-icon.png" alt="">
+                <h4>Drinks</h4>
+            </li>
+        </ul>
+    </section>
+
+    <section id="about">
+        <div class="container text-center py-5">
+            <h4 class="text-main">Our Story</h4>
+            <h2 class="h1 font-poppins">About Us</h2>
+            <div class="hr-with-image mx-auto">
+                <img src="assets/images/btm-style.png" alt="">
+            </div>
+
+            <div class="row row-gap-3 gx-3 py-3">
+                <div class="col-12 col-lg-6 text-start text">
+                    <h4 class="text-main">Who We Are?</h4>
+                    <p class="fs-2 text-light">
+                        BEST FOOD IDEAS & TRADITIONS FROM THE WHOLE WORLD
+                    </p>
+                    <hr class="custom-line w-50">
+                    <p>
+                        Back in 2000, three Kiwi guys including world-renowned chef Peter Moor set up the first Gloreya
+                        Burger Kitchen in Battersea, South London Burger Kitchen in
+                    </p>
+                    <div class="row g-0 row-cols-2 row-gap-3 my-3">
+                        <div class="col d-flex align-items-start">
+                            <img src="assets/images/icons/check-icon.png" alt="" style="width: 2rem;">
+                            <h4 class="ms-3">Quality products</h4>
+                        </div>
+                        <div class="col d-flex align-items-start">
+                            <img src="assets/images/icons/check-icon.png" alt="" style="width: 2rem;">
+                            <h4 class="ms-3">Fastest delivery</h4>
+                        </div>
+                        <div class="col d-flex align-items-start">
+                            <img src="assets/images/icons/check-icon.png" alt="" style="width: 2rem;">
+                            <h4 class="ms-3">World's best Chef</h4>
+                        </div>
+                        <div class="col d-flex align-items-start">
+                            <img src="assets/images/icons/check-icon.png" alt="" style="width: 2rem;">
+                            <h4 class="ms-3">Great Location</h4>
+                        </div>
+                    </div>
+                    <button class="btn-custom-1 rounded-pill fs-6">Our Menu</button>
+                </div>
+                <div class="col-12 col-lg-6 image">
+                    <div class="container-fluid h-100 p-0 d-flex justify-content-center align-items-center">
+                        <img src="assets/images/background/about-img.jpg" alt="" class="img-fluid rounded-3">
+                        <div class="spinner square"></div>
+                        <h3 class="text-dark fw-bold">20+ Years Experience</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <video autoplay muted loop>
+            <source src="assets/videos/video.mp4" type="video/mp4" />
+        </video>
+        <div class="container py-5 text-center">
+            <h3 class="text-center">WE SERVE YOU THE BEST FOOD</h3>
+            <hr class="custom-line w-25 mx-auto">
+            <p class="w-75 mx-auto">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores aperiam repellat cupiditate aut
+                repellendus dignissimos quas dolore et atque nulla?
+            </p>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 row-gap-3">
+                <div class="col d-flex flex-column">
+                    <div class="testimonial-card p-3 rounded-3">
+                        <img src="assets/images/icons/one-icon.png" alt="" class="icon mx-auto img-fluid">
+                        <h2 class="font-poppins fw-bold">20<span class="text-main">+</span></h2>
+                        <h4>Years Experience</h4>
+                    </div>
+                </div>
+                <div class="col d-flex flex-column">
+                    <div class="testimonial-card p-3 rounded-3">
+                        <img src="assets/images/icons/food-icon.png" alt="" class="icon mx-auto img-fluid">
+                        <h2 class="font-poppins fw-bold">56<span class="text-main">+</span></h2>
+                        <h4>Menu Variant</h4>
+                    </div>
+                </div>
+                <div class="col d-flex flex-column">
+                    <div class="testimonial-card p-3 rounded-3">
+                        <img src="assets/images/icons/restaurant-location-icon.png" alt=""
+                            class="icon mx-auto img-fluid">
+                        <h2 class="font-poppins fw-bold">12<span class="text-main">+</span></h2>
+                        <h4>Restaurant Branch</h4>
+                    </div>
+                </div>
+                <div class="col d-flex flex-column">
+                    <div class="testimonial-card p-3 rounded-3">
+                        <img src="assets/images/icons/chef-icon.png" alt="" class="icon mx-auto img-fluid">
+                        <h2 class="font-poppins fw-bold">24<span class="text-main">+</span></h2>
+                        <h4>Professional Chef</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu">
+        <div class="container-fluid text-center px-0 py-5">
+            <h4 class="text-main">Order Now</h4>
+            <h2 class="h1 font-poppins">Menu</h2>
+            <div class="hr-with-image mx-auto">
+                <img src="assets/images/btm-style.png" alt="">
+            </div>
+
+            <div class="row g-0 py-4">
+                <div class="col-12 col-lg-1 nav flex-row flex-lg-column menu-nav" id="myTab" role="tablist">
+                    <button class="menu-link active" id="tap1-tab" data-bs-toggle="tab" data-bs-target="#tap1"
+                        type="button" role="tab" aria-controls="tap1" aria-selected="true">
+                        <img src="assets/images/icons/pizza-icon.png" alt="" class="img-fluid mx-auto w-75">
+                        <h5>Pizza</h5>
+                        <span class="right-arrow d-none d-lg-block"></span>
+                        <span class="bottom-arrow d-block d-lg-none"></span>
+                    </button>
+                    <button class="menu-link" id="tap2-tab" data-bs-toggle="tab" data-bs-target="#tap2" type="button"
+                        role="tab" aria-controls="tap2" aria-selected="false">
+                        <img src="assets/images/icons/hamburger-icon.png" alt="" class="img-fluid mx-auto w-75">
+                        <h5>Burger</h5>
+                        <span class="right-arrow d-none d-lg-block"></span>
+                        <span class="bottom-arrow d-block d-lg-none"></span>
+                    </button>
+                    <button class="menu-link" id="tap3-tab" data-bs-toggle="tab" data-bs-target="#tap3" type="button"
+                        role="tab" aria-controls="tap3" aria-selected="false">
+                        <img src="assets/images/icons/chicken-icon.png" alt="" class="img-fluid mx-auto w-75">
+                        <h5>Chicken</h5>
+                        <span class="right-arrow d-none d-lg-block"></span>
+                        <span class="bottom-arrow d-block d-lg-none"></span>
+                    </button>
+                    <button class="menu-link" id="tap4-tab" data-bs-toggle="tab" data-bs-target="#tap4" type="button"
+                        role="tab" aria-controls="tap4" aria-selected="false">
+                        <img src="assets/images/icons/taco-icon.png" alt="" class="img-fluid mx-auto w-75">
+                        <h5>Taco</h5>
+                        <span class="right-arrow d-none d-lg-block"></span>
+                        <span class="bottom-arrow d-block d-lg-none"></span>
+                    </button>
+                    <button class="menu-link" id="tap5-tab" data-bs-toggle="tab" data-bs-target="#tap5" type="button"
+                        role="tab" aria-controls="tap5" aria-selected="false">
+                        <img src="assets/images/icons/salad-icon.png" alt="" class="img-fluid mx-auto w-75">
+                        <h5>Salad</h5>
+                        <span class="right-arrow d-none d-lg-block"></span>
+                        <span class="bottom-arrow d-block d-lg-none"></span>
+                    </button>
+                    <button class="menu-link" id="tap6-tab" data-bs-toggle="tab" data-bs-target="#tap6" type="button"
+                        role="tab" aria-controls="tap6" aria-selected="false">
+                        <img src="assets/images/icons/fried-potatoes-icon.png" alt="" class="img-fluid mx-auto w-75">
+                        <h5>Fries</h5>
+                        <span class="right-arrow d-none d-lg-block"></span>
+                        <span class="bottom-arrow d-block d-lg-none"></span>
+                    </button>
+                    <button class="menu-link" id="tap7-tab" data-bs-toggle="tab" data-bs-target="#tap7" type="button"
+                        role="tab" aria-controls="tap7" aria-selected="false">
+                        <img src="assets/images/icons/drink-icon.png" alt="" class="img-fluid mx-auto w-75">
+                        <h5>Drinks</h5>
+                        <span class="right-arrow d-none d-lg-block"></span>
+                        <span class="bottom-arrow d-block d-lg-none"></span>
+                    </button>
+                </div>
+
+                <div class="col-12 col-lg-11 tab-content">
+                    <div class="tab-pane fade py-3 px-3 show active" id="tap1" role="tabpanel"
+                        aria-labelledby="tap1-tab" tabindex="0">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 gx-3 row-gap-3">
+                            <div class="col">
+                                <div class="menu-card p-3 border border-2 border-main rounded-3">
+                                    <div class="menu-card-image">
+                                        <img src="assets/images/menu/pizza/1.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="menu-card-body text-start">
+                                        <h3 class="text-center">Pizza Item</h3>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Size: </span>
+                                            <span class="info-content col-6 mx-auto">Regular</span>
+                                        </p>
+                                        <p class="row g-0 text-nowrap">
+                                            <span class="info col-3">Rate: </span>
+                                            <span class="info-content col-6 mx-auto">
+                                                <i style="--index: 0; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 1; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 2; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 3; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 4; font-size: small;"
+                                                    class="star-icon text-main fa-regular fa-star"></i>
+                                            </span>
+                                        </p>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Price: </span>
+                                            <span class="info-content col-6 mx-auto">40<span
+                                                    class="text-main">$</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="menu-card p-3 border border-2 border-main rounded-3">
+                                    <div class="menu-card-image">
+                                        <img src="assets/images/menu/pizza/2.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="menu-card-body text-start">
+                                        <h3 class="text-center">Pizza Item</h3>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Size: </span>
+                                            <span class="info-content col-6 mx-auto">Regular</span>
+                                        </p>
+                                        <p class="row g-0 text-nowrap">
+                                            <span class="info col-3">Rate: </span>
+                                            <span class="info-content col-6 mx-auto">
+                                                <i style="--index: 0; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 1; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 2; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 3; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 4; font-size: small;"
+                                                    class="star-icon text-main fa-regular fa-star"></i>
+                                            </span>
+                                        </p>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Price: </span>
+                                            <span class="info-content col-6 mx-auto">40<span
+                                                    class="text-main">$</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="menu-card p-3 border border-2 border-main rounded-3">
+                                    <div class="menu-card-image">
+                                        <img src="assets/images/menu/pizza/3.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="menu-card-body text-start">
+                                        <h3 class="text-center">Pizza Item</h3>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Size: </span>
+                                            <span class="info-content col-6 mx-auto">Regular</span>
+                                        </p>
+                                        <p class="row g-0 text-nowrap">
+                                            <span class="info col-3">Rate: </span>
+                                            <span class="info-content col-6 mx-auto">
+                                                <i style="--index: 0; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 1; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 2; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 3; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 4; font-size: small;"
+                                                    class="star-icon text-main fa-regular fa-star"></i>
+                                            </span>
+                                        </p>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Price: </span>
+                                            <span class="info-content col-6 mx-auto">40<span
+                                                    class="text-main">$</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="menu-card p-3 border border-2 border-main rounded-3">
+                                    <div class="menu-card-image">
+                                        <img src="assets/images/menu/pizza/4.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="menu-card-body text-start">
+                                        <h3 class="text-center">Pizza Item</h3>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Size: </span>
+                                            <span class="info-content col-6 mx-auto">Regular</span>
+                                        </p>
+                                        <p class="row g-0 text-nowrap">
+                                            <span class="info col-3">Rate: </span>
+                                            <span class="info-content col-6 mx-auto">
+                                                <i style="--index: 0; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 1; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 2; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 3; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 4; font-size: small;"
+                                                    class="star-icon text-main fa-regular fa-star"></i>
+                                            </span>
+                                        </p>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Price: </span>
+                                            <span class="info-content col-6 mx-auto">40<span
+                                                    class="text-main">$</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="menu-card p-3 border border-2 border-main rounded-3">
+                                    <div class="menu-card-image">
+                                        <img src="assets/images/menu/pizza/5.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="menu-card-body text-start">
+                                        <h3 class="text-center">Pizza Item</h3>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Size: </span>
+                                            <span class="info-content col-6 mx-auto">Regular</span>
+                                        </p>
+                                        <p class="row g-0 text-nowrap">
+                                            <span class="info col-3">Rate: </span>
+                                            <span class="info-content col-6 mx-auto">
+                                                <i style="--index: 0; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 1; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 2; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 3; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 4; font-size: small;"
+                                                    class="star-icon text-main fa-regular fa-star"></i>
+                                            </span>
+                                        </p>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Price: </span>
+                                            <span class="info-content col-6 mx-auto">40<span
+                                                    class="text-main">$</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="menu-card p-3 border border-2 border-main rounded-3">
+                                    <div class="menu-card-image">
+                                        <img src="assets/images/menu/pizza/6.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="menu-card-body text-start">
+                                        <h3 class="text-center">Pizza Item</h3>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Size: </span>
+                                            <span class="info-content col-6 mx-auto">Regular</span>
+                                        </p>
+                                        <p class="row g-0 text-nowrap">
+                                            <span class="info col-3">Rate: </span>
+                                            <span class="info-content col-6 mx-auto">
+                                                <i style="--index: 0; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 1; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 2; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 3; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 4; font-size: small;"
+                                                    class="star-icon text-main fa-regular fa-star"></i>
+                                            </span>
+                                        </p>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Price: </span>
+                                            <span class="info-content col-6 mx-auto">40<span
+                                                    class="text-main">$</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="menu-card p-3 border border-2 border-main rounded-3">
+                                    <div class="menu-card-image">
+                                        <img src="assets/images/menu/pizza/7.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="menu-card-body text-start">
+                                        <h3 class="text-center">Pizza Item</h3>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Size: </span>
+                                            <span class="info-content col-6 mx-auto">Regular</span>
+                                        </p>
+                                        <p class="row g-0 text-nowrap">
+                                            <span class="info col-3">Rate: </span>
+                                            <span class="info-content col-6 mx-auto">
+                                                <i style="--index: 0; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 1; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 2; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 3; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 4; font-size: small;"
+                                                    class="star-icon text-main fa-regular fa-star"></i>
+                                            </span>
+                                        </p>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Price: </span>
+                                            <span class="info-content col-6 mx-auto">40<span
+                                                    class="text-main">$</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="menu-card p-3 border border-2 border-main rounded-3">
+                                    <div class="menu-card-image">
+                                        <img src="assets/images/menu/pizza/8.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="menu-card-body text-start">
+                                        <h3 class="text-center">Pizza Item</h3>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Size: </span>
+                                            <span class="info-content col-6 mx-auto">Regular</span>
+                                        </p>
+                                        <p class="row g-0 text-nowrap">
+                                            <span class="info col-3">Rate: </span>
+                                            <span class="info-content col-6 mx-auto">
+                                                <i style="--index: 0; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 1; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 2; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 3; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 4; font-size: small;"
+                                                    class="star-icon text-main fa-regular fa-star"></i>
+                                            </span>
+                                        </p>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Price: </span>
+                                            <span class="info-content col-6 mx-auto">40<span
+                                                    class="text-main">$</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade py-3 px-3" id="tap2" role="tabpanel" aria-labelledby="tap2-tab"
+                        tabindex="0">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 gx-3 row-gap-3">
+                            <div class="col">
+                                <div class="menu-card p-3 border border-2 border-main rounded-3">
+                                    <div class="menu-card-image">
+                                        <img src="assets/images/menu/burger/1.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="menu-card-body text-start">
+                                        <h3 class="text-center">Pizza Item</h3>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Size: </span>
+                                            <span class="info-content col-6 mx-auto">Regular</span>
+                                        </p>
+                                        <p class="row g-0 text-nowrap">
+                                            <span class="info col-3">Rate: </span>
+                                            <span class="info-content col-6 mx-auto">
+                                                <i style="--index: 0; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 1; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 2; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 3; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 4; font-size: small;"
+                                                    class="star-icon text-main fa-regular fa-star"></i>
+                                            </span>
+                                        </p>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Price: </span>
+                                            <span class="info-content col-6 mx-auto">40<span
+                                                    class="text-main">$</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="menu-card p-3 border border-2 border-main rounded-3">
+                                    <div class="menu-card-image">
+                                        <img src="assets/images/menu/burger/2.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="menu-card-body text-start">
+                                        <h3 class="text-center">Pizza Item</h3>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Size: </span>
+                                            <span class="info-content col-6 mx-auto">Regular</span>
+                                        </p>
+                                        <p class="row g-0 text-nowrap">
+                                            <span class="info col-3">Rate: </span>
+                                            <span class="info-content col-6 mx-auto">
+                                                <i style="--index: 0; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 1; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 2; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 3; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 4; font-size: small;"
+                                                    class="star-icon text-main fa-regular fa-star"></i>
+                                            </span>
+                                        </p>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Price: </span>
+                                            <span class="info-content col-6 mx-auto">40<span
+                                                    class="text-main">$</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="menu-card p-3 border border-2 border-main rounded-3">
+                                    <div class="menu-card-image">
+                                        <img src="assets/images/menu/burger/3.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="menu-card-body text-start">
+                                        <h3 class="text-center">Pizza Item</h3>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Size: </span>
+                                            <span class="info-content col-6 mx-auto">Regular</span>
+                                        </p>
+                                        <p class="row g-0 text-nowrap">
+                                            <span class="info col-3">Rate: </span>
+                                            <span class="info-content col-6 mx-auto">
+                                                <i style="--index: 0; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 1; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 2; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 3; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 4; font-size: small;"
+                                                    class="star-icon text-main fa-regular fa-star"></i>
+                                            </span>
+                                        </p>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Price: </span>
+                                            <span class="info-content col-6 mx-auto">40<span
+                                                    class="text-main">$</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="menu-card p-3 border border-2 border-main rounded-3">
+                                    <div class="menu-card-image">
+                                        <img src="assets/images/menu/burger/4.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="menu-card-body text-start">
+                                        <h3 class="text-center">Pizza Item</h3>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Size: </span>
+                                            <span class="info-content col-6 mx-auto">Regular</span>
+                                        </p>
+                                        <p class="row g-0 text-nowrap">
+                                            <span class="info col-3">Rate: </span>
+                                            <span class="info-content col-6 mx-auto">
+                                                <i style="--index: 0; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 1; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 2; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 3; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 4; font-size: small;"
+                                                    class="star-icon text-main fa-regular fa-star"></i>
+                                            </span>
+                                        </p>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Price: </span>
+                                            <span class="info-content col-6 mx-auto">40<span
+                                                    class="text-main">$</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="menu-card p-3 border border-2 border-main rounded-3">
+                                    <div class="menu-card-image">
+                                        <img src="assets/images/menu/burger/5.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="menu-card-body text-start">
+                                        <h3 class="text-center">Pizza Item</h3>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Size: </span>
+                                            <span class="info-content col-6 mx-auto">Regular</span>
+                                        </p>
+                                        <p class="row g-0 text-nowrap">
+                                            <span class="info col-3">Rate: </span>
+                                            <span class="info-content col-6 mx-auto">
+                                                <i style="--index: 0; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 1; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 2; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 3; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 4; font-size: small;"
+                                                    class="star-icon text-main fa-regular fa-star"></i>
+                                            </span>
+                                        </p>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Price: </span>
+                                            <span class="info-content col-6 mx-auto">40<span
+                                                    class="text-main">$</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="menu-card p-3 border border-2 border-main rounded-3">
+                                    <div class="menu-card-image">
+                                        <img src="assets/images/menu/burger/6.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="menu-card-body text-start">
+                                        <h3 class="text-center">Pizza Item</h3>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Size: </span>
+                                            <span class="info-content col-6 mx-auto">Regular</span>
+                                        </p>
+                                        <p class="row g-0 text-nowrap">
+                                            <span class="info col-3">Rate: </span>
+                                            <span class="info-content col-6 mx-auto">
+                                                <i style="--index: 0; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 1; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 2; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 3; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 4; font-size: small;"
+                                                    class="star-icon text-main fa-regular fa-star"></i>
+                                            </span>
+                                        </p>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Price: </span>
+                                            <span class="info-content col-6 mx-auto">40<span
+                                                    class="text-main">$</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="menu-card p-3 border border-2 border-main rounded-3">
+                                    <div class="menu-card-image">
+                                        <img src="assets/images/menu/burger/7.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="menu-card-body text-start">
+                                        <h3 class="text-center">Pizza Item</h3>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Size: </span>
+                                            <span class="info-content col-6 mx-auto">Regular</span>
+                                        </p>
+                                        <p class="row g-0 text-nowrap">
+                                            <span class="info col-3">Rate: </span>
+                                            <span class="info-content col-6 mx-auto">
+                                                <i style="--index: 0; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 1; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 2; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 3; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 4; font-size: small;"
+                                                    class="star-icon text-main fa-regular fa-star"></i>
+                                            </span>
+                                        </p>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Price: </span>
+                                            <span class="info-content col-6 mx-auto">40<span
+                                                    class="text-main">$</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="menu-card p-3 border border-2 border-main rounded-3">
+                                    <div class="menu-card-image">
+                                        <img src="assets/images/menu/burger/8.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="menu-card-body text-start">
+                                        <h3 class="text-center">Pizza Item</h3>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Size: </span>
+                                            <span class="info-content col-6 mx-auto">Regular</span>
+                                        </p>
+                                        <p class="row g-0 text-nowrap">
+                                            <span class="info col-3">Rate: </span>
+                                            <span class="info-content col-6 mx-auto">
+                                                <i style="--index: 0; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 1; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 2; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 3; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 4; font-size: small;"
+                                                    class="star-icon text-main fa-regular fa-star"></i>
+                                            </span>
+                                        </p>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Price: </span>
+                                            <span class="info-content col-6 mx-auto">40<span
+                                                    class="text-main">$</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade py-3 px-3" id="tap3" role="tabpanel" aria-labelledby="tap3-tab"
+                        tabindex="0">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 gx-3 row-gap-3">
+                            <div class="col">
+                                <div class="menu-card p-3 border border-2 border-main rounded-3">
+                                    <div class="menu-card-image">
+                                        <img src="assets/images/menu/chicken/1.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="menu-card-body text-start">
+                                        <h3 class="text-center">Pizza Item</h3>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Size: </span>
+                                            <span class="info-content col-6 mx-auto">Regular</span>
+                                        </p>
+                                        <p class="row g-0 text-nowrap">
+                                            <span class="info col-3">Rate: </span>
+                                            <span class="info-content col-6 mx-auto">
+                                                <i style="--index: 0; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 1; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 2; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 3; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 4; font-size: small;"
+                                                    class="star-icon text-main fa-regular fa-star"></i>
+                                            </span>
+                                        </p>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Price: </span>
+                                            <span class="info-content col-6 mx-auto">40<span
+                                                    class="text-main">$</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="menu-card p-3 border border-2 border-main rounded-3">
+                                    <div class="menu-card-image">
+                                        <img src="assets/images/menu/chicken/2.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="menu-card-body text-start">
+                                        <h3 class="text-center">Pizza Item</h3>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Size: </span>
+                                            <span class="info-content col-6 mx-auto">Regular</span>
+                                        </p>
+                                        <p class="row g-0 text-nowrap">
+                                            <span class="info col-3">Rate: </span>
+                                            <span class="info-content col-6 mx-auto">
+                                                <i style="--index: 0; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 1; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 2; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 3; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 4; font-size: small;"
+                                                    class="star-icon text-main fa-regular fa-star"></i>
+                                            </span>
+                                        </p>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Price: </span>
+                                            <span class="info-content col-6 mx-auto">40<span
+                                                    class="text-main">$</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="menu-card p-3 border border-2 border-main rounded-3">
+                                    <div class="menu-card-image">
+                                        <img src="assets/images/menu/chicken/3.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="menu-card-body text-start">
+                                        <h3 class="text-center">Pizza Item</h3>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Size: </span>
+                                            <span class="info-content col-6 mx-auto">Regular</span>
+                                        </p>
+                                        <p class="row g-0 text-nowrap">
+                                            <span class="info col-3">Rate: </span>
+                                            <span class="info-content col-6 mx-auto">
+                                                <i style="--index: 0; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 1; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 2; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 3; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 4; font-size: small;"
+                                                    class="star-icon text-main fa-regular fa-star"></i>
+                                            </span>
+                                        </p>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Price: </span>
+                                            <span class="info-content col-6 mx-auto">40<span
+                                                    class="text-main">$</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="menu-card p-3 border border-2 border-main rounded-3">
+                                    <div class="menu-card-image">
+                                        <img src="assets/images/menu/chicken/4.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="menu-card-body text-start">
+                                        <h3 class="text-center">Pizza Item</h3>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Size: </span>
+                                            <span class="info-content col-6 mx-auto">Regular</span>
+                                        </p>
+                                        <p class="row g-0 text-nowrap">
+                                            <span class="info col-3">Rate: </span>
+                                            <span class="info-content col-6 mx-auto">
+                                                <i style="--index: 0; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 1; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 2; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 3; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 4; font-size: small;"
+                                                    class="star-icon text-main fa-regular fa-star"></i>
+                                            </span>
+                                        </p>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Price: </span>
+                                            <span class="info-content col-6 mx-auto">40<span
+                                                    class="text-main">$</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="menu-card p-3 border border-2 border-main rounded-3">
+                                    <div class="menu-card-image">
+                                        <img src="assets/images/menu/chicken/5.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="menu-card-body text-start">
+                                        <h3 class="text-center">Pizza Item</h3>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Size: </span>
+                                            <span class="info-content col-6 mx-auto">Regular</span>
+                                        </p>
+                                        <p class="row g-0 text-nowrap">
+                                            <span class="info col-3">Rate: </span>
+                                            <span class="info-content col-6 mx-auto">
+                                                <i style="--index: 0; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 1; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 2; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 3; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 4; font-size: small;"
+                                                    class="star-icon text-main fa-regular fa-star"></i>
+                                            </span>
+                                        </p>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Price: </span>
+                                            <span class="info-content col-6 mx-auto">40<span
+                                                    class="text-main">$</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="menu-card p-3 border border-2 border-main rounded-3">
+                                    <div class="menu-card-image">
+                                        <img src="assets/images/menu/chicken/6.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="menu-card-body text-start">
+                                        <h3 class="text-center">Pizza Item</h3>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Size: </span>
+                                            <span class="info-content col-6 mx-auto">Regular</span>
+                                        </p>
+                                        <p class="row g-0 text-nowrap">
+                                            <span class="info col-3">Rate: </span>
+                                            <span class="info-content col-6 mx-auto">
+                                                <i style="--index: 0; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 1; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 2; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 3; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 4; font-size: small;"
+                                                    class="star-icon text-main fa-regular fa-star"></i>
+                                            </span>
+                                        </p>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Price: </span>
+                                            <span class="info-content col-6 mx-auto">40<span
+                                                    class="text-main">$</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="menu-card p-3 border border-2 border-main rounded-3">
+                                    <div class="menu-card-image">
+                                        <img src="assets/images/menu/chicken/7.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="menu-card-body text-start">
+                                        <h3 class="text-center">Pizza Item</h3>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Size: </span>
+                                            <span class="info-content col-6 mx-auto">Regular</span>
+                                        </p>
+                                        <p class="row g-0 text-nowrap">
+                                            <span class="info col-3">Rate: </span>
+                                            <span class="info-content col-6 mx-auto">
+                                                <i style="--index: 0; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 1; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 2; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 3; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 4; font-size: small;"
+                                                    class="star-icon text-main fa-regular fa-star"></i>
+                                            </span>
+                                        </p>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Price: </span>
+                                            <span class="info-content col-6 mx-auto">40<span
+                                                    class="text-main">$</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="menu-card p-3 border border-2 border-main rounded-3">
+                                    <div class="menu-card-image">
+                                        <img src="assets/images/menu/chicken/8.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="menu-card-body text-start">
+                                        <h3 class="text-center">Pizza Item</h3>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Size: </span>
+                                            <span class="info-content col-6 mx-auto">Regular</span>
+                                        </p>
+                                        <p class="row g-0 text-nowrap">
+                                            <span class="info col-3">Rate: </span>
+                                            <span class="info-content col-6 mx-auto">
+                                                <i style="--index: 0; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 1; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 2; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 3; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 4; font-size: small;"
+                                                    class="star-icon text-main fa-regular fa-star"></i>
+                                            </span>
+                                        </p>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Price: </span>
+                                            <span class="info-content col-6 mx-auto">40<span
+                                                    class="text-main">$</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade py-3 px-3" id="tap4" role="tabpanel" aria-labelledby="tap4-tab"
+                        tabindex="0">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 gx-3 row-gap-3">
+                            <div class="col">
+                                <div class="menu-card p-3 border border-2 border-main rounded-3">
+                                    <div class="menu-card-image">
+                                        <img src="assets/images/menu/taco/1.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="menu-card-body text-start">
+                                        <h3 class="text-center">Pizza Item</h3>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Size: </span>
+                                            <span class="info-content col-6 mx-auto">Regular</span>
+                                        </p>
+                                        <p class="row g-0 text-nowrap">
+                                            <span class="info col-3">Rate: </span>
+                                            <span class="info-content col-6 mx-auto">
+                                                <i style="--index: 0; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 1; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 2; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 3; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 4; font-size: small;"
+                                                    class="star-icon text-main fa-regular fa-star"></i>
+                                            </span>
+                                        </p>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Price: </span>
+                                            <span class="info-content col-6 mx-auto">40<span
+                                                    class="text-main">$</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="menu-card p-3 border border-2 border-main rounded-3">
+                                    <div class="menu-card-image">
+                                        <img src="assets/images/menu/taco/2.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="menu-card-body text-start">
+                                        <h3 class="text-center">Pizza Item</h3>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Size: </span>
+                                            <span class="info-content col-6 mx-auto">Regular</span>
+                                        </p>
+                                        <p class="row g-0 text-nowrap">
+                                            <span class="info col-3">Rate: </span>
+                                            <span class="info-content col-6 mx-auto">
+                                                <i style="--index: 0; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 1; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 2; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 3; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 4; font-size: small;"
+                                                    class="star-icon text-main fa-regular fa-star"></i>
+                                            </span>
+                                        </p>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Price: </span>
+                                            <span class="info-content col-6 mx-auto">40<span
+                                                    class="text-main">$</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="menu-card p-3 border border-2 border-main rounded-3">
+                                    <div class="menu-card-image">
+                                        <img src="assets/images/menu/taco/3.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="menu-card-body text-start">
+                                        <h3 class="text-center">Pizza Item</h3>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Size: </span>
+                                            <span class="info-content col-6 mx-auto">Regular</span>
+                                        </p>
+                                        <p class="row g-0 text-nowrap">
+                                            <span class="info col-3">Rate: </span>
+                                            <span class="info-content col-6 mx-auto">
+                                                <i style="--index: 0; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 1; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 2; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 3; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 4; font-size: small;"
+                                                    class="star-icon text-main fa-regular fa-star"></i>
+                                            </span>
+                                        </p>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Price: </span>
+                                            <span class="info-content col-6 mx-auto">40<span
+                                                    class="text-main">$</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="menu-card p-3 border border-2 border-main rounded-3">
+                                    <div class="menu-card-image">
+                                        <img src="assets/images/menu/taco/4.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="menu-card-body text-start">
+                                        <h3 class="text-center">Pizza Item</h3>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Size: </span>
+                                            <span class="info-content col-6 mx-auto">Regular</span>
+                                        </p>
+                                        <p class="row g-0 text-nowrap">
+                                            <span class="info col-3">Rate: </span>
+                                            <span class="info-content col-6 mx-auto">
+                                                <i style="--index: 0; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 1; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 2; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 3; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 4; font-size: small;"
+                                                    class="star-icon text-main fa-regular fa-star"></i>
+                                            </span>
+                                        </p>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Price: </span>
+                                            <span class="info-content col-6 mx-auto">40<span
+                                                    class="text-main">$</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="menu-card p-3 border border-2 border-main rounded-3">
+                                    <div class="menu-card-image">
+                                        <img src="assets/images/menu/taco/5.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="menu-card-body text-start">
+                                        <h3 class="text-center">Pizza Item</h3>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Size: </span>
+                                            <span class="info-content col-6 mx-auto">Regular</span>
+                                        </p>
+                                        <p class="row g-0 text-nowrap">
+                                            <span class="info col-3">Rate: </span>
+                                            <span class="info-content col-6 mx-auto">
+                                                <i style="--index: 0; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 1; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 2; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 3; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 4; font-size: small;"
+                                                    class="star-icon text-main fa-regular fa-star"></i>
+                                            </span>
+                                        </p>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Price: </span>
+                                            <span class="info-content col-6 mx-auto">40<span
+                                                    class="text-main">$</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="menu-card p-3 border border-2 border-main rounded-3">
+                                    <div class="menu-card-image">
+                                        <img src="assets/images/menu/taco/6.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="menu-card-body text-start">
+                                        <h3 class="text-center">Pizza Item</h3>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Size: </span>
+                                            <span class="info-content col-6 mx-auto">Regular</span>
+                                        </p>
+                                        <p class="row g-0 text-nowrap">
+                                            <span class="info col-3">Rate: </span>
+                                            <span class="info-content col-6 mx-auto">
+                                                <i style="--index: 0; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 1; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 2; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 3; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 4; font-size: small;"
+                                                    class="star-icon text-main fa-regular fa-star"></i>
+                                            </span>
+                                        </p>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Price: </span>
+                                            <span class="info-content col-6 mx-auto">40<span
+                                                    class="text-main">$</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="menu-card p-3 border border-2 border-main rounded-3">
+                                    <div class="menu-card-image">
+                                        <img src="assets/images/menu/taco/7.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="menu-card-body text-start">
+                                        <h3 class="text-center">Pizza Item</h3>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Size: </span>
+                                            <span class="info-content col-6 mx-auto">Regular</span>
+                                        </p>
+                                        <p class="row g-0 text-nowrap">
+                                            <span class="info col-3">Rate: </span>
+                                            <span class="info-content col-6 mx-auto">
+                                                <i style="--index: 0; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 1; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 2; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 3; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 4; font-size: small;"
+                                                    class="star-icon text-main fa-regular fa-star"></i>
+                                            </span>
+                                        </p>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Price: </span>
+                                            <span class="info-content col-6 mx-auto">40<span
+                                                    class="text-main">$</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="menu-card p-3 border border-2 border-main rounded-3">
+                                    <div class="menu-card-image">
+                                        <img src="assets/images/menu/taco/8.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="menu-card-body text-start">
+                                        <h3 class="text-center">Pizza Item</h3>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Size: </span>
+                                            <span class="info-content col-6 mx-auto">Regular</span>
+                                        </p>
+                                        <p class="row g-0 text-nowrap">
+                                            <span class="info col-3">Rate: </span>
+                                            <span class="info-content col-6 mx-auto">
+                                                <i style="--index: 0; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 1; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 2; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 3; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 4; font-size: small;"
+                                                    class="star-icon text-main fa-regular fa-star"></i>
+                                            </span>
+                                        </p>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Price: </span>
+                                            <span class="info-content col-6 mx-auto">40<span
+                                                    class="text-main">$</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade py-3 px-3" id="tap5" role="tabpanel" aria-labelledby="tap5-tab"
+                        tabindex="0">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 gx-3 row-gap-3">
+                            <div class="col">
+                                <div class="menu-card p-3 border border-2 border-main rounded-3">
+                                    <div class="menu-card-image">
+                                        <img src="assets/images/menu/salad/1.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="menu-card-body text-start">
+                                        <h3 class="text-center">Pizza Item</h3>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Size: </span>
+                                            <span class="info-content col-6 mx-auto">Regular</span>
+                                        </p>
+                                        <p class="row g-0 text-nowrap">
+                                            <span class="info col-3">Rate: </span>
+                                            <span class="info-content col-6 mx-auto">
+                                                <i style="--index: 0; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 1; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 2; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 3; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 4; font-size: small;"
+                                                    class="star-icon text-main fa-regular fa-star"></i>
+                                            </span>
+                                        </p>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Price: </span>
+                                            <span class="info-content col-6 mx-auto">40<span
+                                                    class="text-main">$</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="menu-card p-3 border border-2 border-main rounded-3">
+                                    <div class="menu-card-image">
+                                        <img src="assets/images/menu/salad/2.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="menu-card-body text-start">
+                                        <h3 class="text-center">Pizza Item</h3>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Size: </span>
+                                            <span class="info-content col-6 mx-auto">Regular</span>
+                                        </p>
+                                        <p class="row g-0 text-nowrap">
+                                            <span class="info col-3">Rate: </span>
+                                            <span class="info-content col-6 mx-auto">
+                                                <i style="--index: 0; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 1; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 2; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 3; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 4; font-size: small;"
+                                                    class="star-icon text-main fa-regular fa-star"></i>
+                                            </span>
+                                        </p>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Price: </span>
+                                            <span class="info-content col-6 mx-auto">40<span
+                                                    class="text-main">$</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="menu-card p-3 border border-2 border-main rounded-3">
+                                    <div class="menu-card-image">
+                                        <img src="assets/images/menu/salad/3.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="menu-card-body text-start">
+                                        <h3 class="text-center">Pizza Item</h3>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Size: </span>
+                                            <span class="info-content col-6 mx-auto">Regular</span>
+                                        </p>
+                                        <p class="row g-0 text-nowrap">
+                                            <span class="info col-3">Rate: </span>
+                                            <span class="info-content col-6 mx-auto">
+                                                <i style="--index: 0; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 1; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 2; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 3; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 4; font-size: small;"
+                                                    class="star-icon text-main fa-regular fa-star"></i>
+                                            </span>
+                                        </p>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Price: </span>
+                                            <span class="info-content col-6 mx-auto">40<span
+                                                    class="text-main">$</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="menu-card p-3 border border-2 border-main rounded-3">
+                                    <div class="menu-card-image">
+                                        <img src="assets/images/menu/salad/4.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="menu-card-body text-start">
+                                        <h3 class="text-center">Pizza Item</h3>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Size: </span>
+                                            <span class="info-content col-6 mx-auto">Regular</span>
+                                        </p>
+                                        <p class="row g-0 text-nowrap">
+                                            <span class="info col-3">Rate: </span>
+                                            <span class="info-content col-6 mx-auto">
+                                                <i style="--index: 0; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 1; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 2; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 3; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 4; font-size: small;"
+                                                    class="star-icon text-main fa-regular fa-star"></i>
+                                            </span>
+                                        </p>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Price: </span>
+                                            <span class="info-content col-6 mx-auto">40<span
+                                                    class="text-main">$</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="menu-card p-3 border border-2 border-main rounded-3">
+                                    <div class="menu-card-image">
+                                        <img src="assets/images/menu/salad/5.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="menu-card-body text-start">
+                                        <h3 class="text-center">Pizza Item</h3>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Size: </span>
+                                            <span class="info-content col-6 mx-auto">Regular</span>
+                                        </p>
+                                        <p class="row g-0 text-nowrap">
+                                            <span class="info col-3">Rate: </span>
+                                            <span class="info-content col-6 mx-auto">
+                                                <i style="--index: 0; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 1; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 2; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 3; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 4; font-size: small;"
+                                                    class="star-icon text-main fa-regular fa-star"></i>
+                                            </span>
+                                        </p>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Price: </span>
+                                            <span class="info-content col-6 mx-auto">40<span
+                                                    class="text-main">$</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="menu-card p-3 border border-2 border-main rounded-3">
+                                    <div class="menu-card-image">
+                                        <img src="assets/images/menu/salad/6.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="menu-card-body text-start">
+                                        <h3 class="text-center">Pizza Item</h3>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Size: </span>
+                                            <span class="info-content col-6 mx-auto">Regular</span>
+                                        </p>
+                                        <p class="row g-0 text-nowrap">
+                                            <span class="info col-3">Rate: </span>
+                                            <span class="info-content col-6 mx-auto">
+                                                <i style="--index: 0; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 1; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 2; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 3; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 4; font-size: small;"
+                                                    class="star-icon text-main fa-regular fa-star"></i>
+                                            </span>
+                                        </p>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Price: </span>
+                                            <span class="info-content col-6 mx-auto">40<span
+                                                    class="text-main">$</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="menu-card p-3 border border-2 border-main rounded-3">
+                                    <div class="menu-card-image">
+                                        <img src="assets/images/menu/salad/7.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="menu-card-body text-start">
+                                        <h3 class="text-center">Pizza Item</h3>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Size: </span>
+                                            <span class="info-content col-6 mx-auto">Regular</span>
+                                        </p>
+                                        <p class="row g-0 text-nowrap">
+                                            <span class="info col-3">Rate: </span>
+                                            <span class="info-content col-6 mx-auto">
+                                                <i style="--index: 0; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 1; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 2; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 3; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 4; font-size: small;"
+                                                    class="star-icon text-main fa-regular fa-star"></i>
+                                            </span>
+                                        </p>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Price: </span>
+                                            <span class="info-content col-6 mx-auto">40<span
+                                                    class="text-main">$</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="menu-card p-3 border border-2 border-main rounded-3">
+                                    <div class="menu-card-image">
+                                        <img src="assets/images/menu/salad/8.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="menu-card-body text-start">
+                                        <h3 class="text-center">Pizza Item</h3>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Size: </span>
+                                            <span class="info-content col-6 mx-auto">Regular</span>
+                                        </p>
+                                        <p class="row g-0 text-nowrap">
+                                            <span class="info col-3">Rate: </span>
+                                            <span class="info-content col-6 mx-auto">
+                                                <i style="--index: 0; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 1; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 2; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 3; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 4; font-size: small;"
+                                                    class="star-icon text-main fa-regular fa-star"></i>
+                                            </span>
+                                        </p>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Price: </span>
+                                            <span class="info-content col-6 mx-auto">40<span
+                                                    class="text-main">$</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade py-3 px-3" id="tap6" role="tabpanel" aria-labelledby="tap6-tab"
+                        tabindex="0">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 gx-3 row-gap-3">
+                            <div class="col">
+                                <div class="menu-card p-3 border border-2 border-main rounded-3">
+                                    <div class="menu-card-image">
+                                        <img src="assets/images/menu/fries/1.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="menu-card-body text-start">
+                                        <h3 class="text-center">Pizza Item</h3>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Size: </span>
+                                            <span class="info-content col-6 mx-auto">Regular</span>
+                                        </p>
+                                        <p class="row g-0 text-nowrap">
+                                            <span class="info col-3">Rate: </span>
+                                            <span class="info-content col-6 mx-auto">
+                                                <i style="--index: 0; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 1; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 2; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 3; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 4; font-size: small;"
+                                                    class="star-icon text-main fa-regular fa-star"></i>
+                                            </span>
+                                        </p>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Price: </span>
+                                            <span class="info-content col-6 mx-auto">40<span
+                                                    class="text-main">$</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="menu-card p-3 border border-2 border-main rounded-3">
+                                    <div class="menu-card-image">
+                                        <img src="assets/images/menu/fries/2.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="menu-card-body text-start">
+                                        <h3 class="text-center">Pizza Item</h3>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Size: </span>
+                                            <span class="info-content col-6 mx-auto">Regular</span>
+                                        </p>
+                                        <p class="row g-0 text-nowrap">
+                                            <span class="info col-3">Rate: </span>
+                                            <span class="info-content col-6 mx-auto">
+                                                <i style="--index: 0; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 1; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 2; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 3; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 4; font-size: small;"
+                                                    class="star-icon text-main fa-regular fa-star"></i>
+                                            </span>
+                                        </p>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Price: </span>
+                                            <span class="info-content col-6 mx-auto">40<span
+                                                    class="text-main">$</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="menu-card p-3 border border-2 border-main rounded-3">
+                                    <div class="menu-card-image">
+                                        <img src="assets/images/menu/fries/3.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="menu-card-body text-start">
+                                        <h3 class="text-center">Pizza Item</h3>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Size: </span>
+                                            <span class="info-content col-6 mx-auto">Regular</span>
+                                        </p>
+                                        <p class="row g-0 text-nowrap">
+                                            <span class="info col-3">Rate: </span>
+                                            <span class="info-content col-6 mx-auto">
+                                                <i style="--index: 0; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 1; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 2; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 3; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 4; font-size: small;"
+                                                    class="star-icon text-main fa-regular fa-star"></i>
+                                            </span>
+                                        </p>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Price: </span>
+                                            <span class="info-content col-6 mx-auto">40<span
+                                                    class="text-main">$</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="menu-card p-3 border border-2 border-main rounded-3">
+                                    <div class="menu-card-image">
+                                        <img src="assets/images/menu/fries/4.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="menu-card-body text-start">
+                                        <h3 class="text-center">Pizza Item</h3>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Size: </span>
+                                            <span class="info-content col-6 mx-auto">Regular</span>
+                                        </p>
+                                        <p class="row g-0 text-nowrap">
+                                            <span class="info col-3">Rate: </span>
+                                            <span class="info-content col-6 mx-auto">
+                                                <i style="--index: 0; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 1; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 2; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 3; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 4; font-size: small;"
+                                                    class="star-icon text-main fa-regular fa-star"></i>
+                                            </span>
+                                        </p>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Price: </span>
+                                            <span class="info-content col-6 mx-auto">40<span
+                                                    class="text-main">$</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="menu-card p-3 border border-2 border-main rounded-3">
+                                    <div class="menu-card-image">
+                                        <img src="assets/images/menu/fries/5.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="menu-card-body text-start">
+                                        <h3 class="text-center">Pizza Item</h3>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Size: </span>
+                                            <span class="info-content col-6 mx-auto">Regular</span>
+                                        </p>
+                                        <p class="row g-0 text-nowrap">
+                                            <span class="info col-3">Rate: </span>
+                                            <span class="info-content col-6 mx-auto">
+                                                <i style="--index: 0; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 1; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 2; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 3; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 4; font-size: small;"
+                                                    class="star-icon text-main fa-regular fa-star"></i>
+                                            </span>
+                                        </p>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Price: </span>
+                                            <span class="info-content col-6 mx-auto">40<span
+                                                    class="text-main">$</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="menu-card p-3 border border-2 border-main rounded-3">
+                                    <div class="menu-card-image">
+                                        <img src="assets/images/menu/fries/6.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="menu-card-body text-start">
+                                        <h3 class="text-center">Pizza Item</h3>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Size: </span>
+                                            <span class="info-content col-6 mx-auto">Regular</span>
+                                        </p>
+                                        <p class="row g-0 text-nowrap">
+                                            <span class="info col-3">Rate: </span>
+                                            <span class="info-content col-6 mx-auto">
+                                                <i style="--index: 0; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 1; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 2; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 3; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 4; font-size: small;"
+                                                    class="star-icon text-main fa-regular fa-star"></i>
+                                            </span>
+                                        </p>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Price: </span>
+                                            <span class="info-content col-6 mx-auto">40<span
+                                                    class="text-main">$</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="menu-card p-3 border border-2 border-main rounded-3">
+                                    <div class="menu-card-image">
+                                        <img src="assets/images/menu/fries/7.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="menu-card-body text-start">
+                                        <h3 class="text-center">Pizza Item</h3>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Size: </span>
+                                            <span class="info-content col-6 mx-auto">Regular</span>
+                                        </p>
+                                        <p class="row g-0 text-nowrap">
+                                            <span class="info col-3">Rate: </span>
+                                            <span class="info-content col-6 mx-auto">
+                                                <i style="--index: 0; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 1; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 2; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 3; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 4; font-size: small;"
+                                                    class="star-icon text-main fa-regular fa-star"></i>
+                                            </span>
+                                        </p>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Price: </span>
+                                            <span class="info-content col-6 mx-auto">40<span
+                                                    class="text-main">$</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="menu-card p-3 border border-2 border-main rounded-3">
+                                    <div class="menu-card-image">
+                                        <img src="assets/images/menu/fries/8.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="menu-card-body text-start">
+                                        <h3 class="text-center">Pizza Item</h3>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Size: </span>
+                                            <span class="info-content col-6 mx-auto">Regular</span>
+                                        </p>
+                                        <p class="row g-0 text-nowrap">
+                                            <span class="info col-3">Rate: </span>
+                                            <span class="info-content col-6 mx-auto">
+                                                <i style="--index: 0; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 1; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 2; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 3; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 4; font-size: small;"
+                                                    class="star-icon text-main fa-regular fa-star"></i>
+                                            </span>
+                                        </p>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Price: </span>
+                                            <span class="info-content col-6 mx-auto">40<span
+                                                    class="text-main">$</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade py-3 px-3" id="tap7" role="tabpanel" aria-labelledby="tap7-tab"
+                        tabindex="0">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 gx-3 row-gap-3">
+                            <div class="col">
+                                <div class="menu-card p-3 border border-2 border-main rounded-3">
+                                    <div class="menu-card-image">
+                                        <img src="assets/images/menu/drink/1.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="menu-card-body text-start">
+                                        <h3 class="text-center">Pizza Item</h3>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Size: </span>
+                                            <span class="info-content col-6 mx-auto">Regular</span>
+                                        </p>
+                                        <p class="row g-0 text-nowrap">
+                                            <span class="info col-3">Rate: </span>
+                                            <span class="info-content col-6 mx-auto">
+                                                <i style="--index: 0; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 1; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 2; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 3; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 4; font-size: small;"
+                                                    class="star-icon text-main fa-regular fa-star"></i>
+                                            </span>
+                                        </p>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Price: </span>
+                                            <span class="info-content col-6 mx-auto">40<span
+                                                    class="text-main">$</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="menu-card p-3 border border-2 border-main rounded-3">
+                                    <div class="menu-card-image">
+                                        <img src="assets/images/menu/drink/2.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="menu-card-body text-start">
+                                        <h3 class="text-center">Pizza Item</h3>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Size: </span>
+                                            <span class="info-content col-6 mx-auto">Regular</span>
+                                        </p>
+                                        <p class="row g-0 text-nowrap">
+                                            <span class="info col-3">Rate: </span>
+                                            <span class="info-content col-6 mx-auto">
+                                                <i style="--index: 0; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 1; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 2; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 3; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 4; font-size: small;"
+                                                    class="star-icon text-main fa-regular fa-star"></i>
+                                            </span>
+                                        </p>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Price: </span>
+                                            <span class="info-content col-6 mx-auto">40<span
+                                                    class="text-main">$</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="menu-card p-3 border border-2 border-main rounded-3">
+                                    <div class="menu-card-image">
+                                        <img src="assets/images/menu/drink/3.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="menu-card-body text-start">
+                                        <h3 class="text-center">Pizza Item</h3>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Size: </span>
+                                            <span class="info-content col-6 mx-auto">Regular</span>
+                                        </p>
+                                        <p class="row g-0 text-nowrap">
+                                            <span class="info col-3">Rate: </span>
+                                            <span class="info-content col-6 mx-auto">
+                                                <i style="--index: 0; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 1; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 2; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 3; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 4; font-size: small;"
+                                                    class="star-icon text-main fa-regular fa-star"></i>
+                                            </span>
+                                        </p>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Price: </span>
+                                            <span class="info-content col-6 mx-auto">40<span
+                                                    class="text-main">$</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="menu-card p-3 border border-2 border-main rounded-3">
+                                    <div class="menu-card-image">
+                                        <img src="assets/images/menu/drink/4.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="menu-card-body text-start">
+                                        <h3 class="text-center">Pizza Item</h3>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Size: </span>
+                                            <span class="info-content col-6 mx-auto">Regular</span>
+                                        </p>
+                                        <p class="row g-0 text-nowrap">
+                                            <span class="info col-3">Rate: </span>
+                                            <span class="info-content col-6 mx-auto">
+                                                <i style="--index: 0; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 1; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 2; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 3; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 4; font-size: small;"
+                                                    class="star-icon text-main fa-regular fa-star"></i>
+                                            </span>
+                                        </p>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Price: </span>
+                                            <span class="info-content col-6 mx-auto">40<span
+                                                    class="text-main">$</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="menu-card p-3 border border-2 border-main rounded-3">
+                                    <div class="menu-card-image">
+                                        <img src="assets/images/menu/drink/5.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="menu-card-body text-start">
+                                        <h3 class="text-center">Pizza Item</h3>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Size: </span>
+                                            <span class="info-content col-6 mx-auto">Regular</span>
+                                        </p>
+                                        <p class="row g-0 text-nowrap">
+                                            <span class="info col-3">Rate: </span>
+                                            <span class="info-content col-6 mx-auto">
+                                                <i style="--index: 0; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 1; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 2; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 3; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 4; font-size: small;"
+                                                    class="star-icon text-main fa-regular fa-star"></i>
+                                            </span>
+                                        </p>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Price: </span>
+                                            <span class="info-content col-6 mx-auto">40<span
+                                                    class="text-main">$</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="menu-card p-3 border border-2 border-main rounded-3">
+                                    <div class="menu-card-image">
+                                        <img src="assets/images/menu/drink/6.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="menu-card-body text-start">
+                                        <h3 class="text-center">Pizza Item</h3>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Size: </span>
+                                            <span class="info-content col-6 mx-auto">Regular</span>
+                                        </p>
+                                        <p class="row g-0 text-nowrap">
+                                            <span class="info col-3">Rate: </span>
+                                            <span class="info-content col-6 mx-auto">
+                                                <i style="--index: 0; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 1; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 2; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 3; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 4; font-size: small;"
+                                                    class="star-icon text-main fa-regular fa-star"></i>
+                                            </span>
+                                        </p>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Price: </span>
+                                            <span class="info-content col-6 mx-auto">40<span
+                                                    class="text-main">$</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="menu-card p-3 border border-2 border-main rounded-3">
+                                    <div class="menu-card-image">
+                                        <img src="assets/images/menu/drink/7.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="menu-card-body text-start">
+                                        <h3 class="text-center">Pizza Item</h3>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Size: </span>
+                                            <span class="info-content col-6 mx-auto">Regular</span>
+                                        </p>
+                                        <p class="row g-0 text-nowrap">
+                                            <span class="info col-3">Rate: </span>
+                                            <span class="info-content col-6 mx-auto">
+                                                <i style="--index: 0; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 1; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 2; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 3; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 4; font-size: small;"
+                                                    class="star-icon text-main fa-regular fa-star"></i>
+                                            </span>
+                                        </p>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Price: </span>
+                                            <span class="info-content col-6 mx-auto">40<span
+                                                    class="text-main">$</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="menu-card p-3 border border-2 border-main rounded-3">
+                                    <div class="menu-card-image">
+                                        <img src="assets/images/menu/drink/8.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="menu-card-body text-start">
+                                        <h3 class="text-center">Pizza Item</h3>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Size: </span>
+                                            <span class="info-content col-6 mx-auto">Regular</span>
+                                        </p>
+                                        <p class="row g-0 text-nowrap">
+                                            <span class="info col-3">Rate: </span>
+                                            <span class="info-content col-6 mx-auto">
+                                                <i style="--index: 0; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 1; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 2; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 3; font-size: small;"
+                                                    class="star-icon text-main fa-solid fa-star"></i>
+                                                <i style="--index: 4; font-size: small;"
+                                                    class="star-icon text-main fa-regular fa-star"></i>
+                                            </span>
+                                        </p>
+                                        <p class="row g-0">
+                                            <span class="info col-3">Price: </span>
+                                            <span class="info-content col-6 mx-auto">40<span
+                                                    class="text-main">$</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team">
+        <div class="container py-5 px-4 px-md-3 text-center">
+            <h4 class="text-main">Team</h4>
+            <h2 class="h1 font-poppins">Our Chefs</h2>
+            <div class="hr-with-image mx-auto">
+                <img src="assets/images/btm-style.png" alt="">
+            </div>
+            <div
+                class="row row-cols-1 row-cols-md-2 row-cols-xl-3 row-gap-5 my-5 justify-content-center align-items-center">
+                <div class="col">
+                    <div class="team-card mx-auto">
+                        <img src="assets/images/team/1.jpg" alt="" class="img-fluid rounded-3">
+                        <div class="text text-start py-1 px-3 rounded-3">
+                            <h3 class="font-poppins">Angelina John</h3>
+                            <h6>Senior Chef</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="team-card mx-auto">
+                        <img src="assets/images/team/2.jpg" alt="" class="img-fluid rounded-3">
+                        <div class="text text-start py-1 px-3 rounded-3">
+                            <h3 class="font-poppins">Andre Smith</h3>
+                            <h6>Professor</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="team-card mx-auto">
+                        <img src="assets/images/team/3.jpg" alt="" class="img-fluid rounded-3">
+                        <div class="text text-start py-1 px-3 rounded-3">
+                            <h3 class="font-poppins">Christina Chi</h3>
+                            <h6>Master Chef</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="orderNow" class="overflow-hidden">
+        <div class="container py-5 text-center">
+            <h4 class="text-main">Order Now</h4>
+            <h2 class="h1 font-poppins">Get Your Meal</h2>
+            <div class="hr-with-image mx-auto">
+                <img src="assets/images/btm-style.png" alt="">
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="container-fluid px-4 py-4 mx-auto form-container rounded-3">
+                        <h2 class="text-main">Order Now</h2>
+                        <form action="" data-bs-theme="light">
+                            <div class="d-flex flex-column row-gap-3">
+                                <div class="input-group flex-nowrap">
+                                    <label class="input-group-text" for="username">
+                                        <i class="fa-solid fa-user"></i>
+                                    </label>
+                                    <input type="text" id="username" name="username" class="form-control"
+                                        placeholder="Enter your name" aria-label="Username"
+                                        aria-describedby="addon-wrapping">
+                                </div>
+                                <div class="input-group flex-nowrap">
+                                    <label class="input-group-text" for="phone">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </label>
+                                    <input type="text" class="form-control" id="phone" name="phone"
+                                        placeholder="Enter your phone" aria-label="Phone"
+                                        aria-describedby="addon-wrapping">
+                                </div>
+                                <div class="input-group flex-nowrap">
+                                    <label class="input-group-text" for="date">
+                                        <i class="fa-regular fa-calendar"></i>
+                                    </label>
+                                    <input type="date" class="form-control" id="date" name="date" aria-label="Date"
+                                        aria-describedby="addon-wrapping">
+                                </div>
+                                <div class="input-group flex-nowrap">
+                                    <label class="input-group-text" for="time">
+                                        <i class="fa-regular fa-clock"></i>
+                                    </label>
+                                    <input type="time" class="form-control" id="time" name="time" aria-label="Time"
+                                        aria-describedby="addon-wrapping">
+                                </div>
+                                <div class="input-group flex-nowrap">
+                                    <label class="input-group-text align-items-start" for="order">
+                                        <i class="fa-solid fa-bell-concierge"></i>
+                                    </label>
+                                    <textarea class="form-control" placeholder="Write your order" id="order"
+                                        name="order" aria-label="With textarea" rows="10"
+                                        style="resize: none;"></textarea>
+                                </div>
+                                <button class="btn-custom-1 rounded-2 fs-6">Order</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-6 d-none d-lg-block">
+                    <div class="d-flex justify-content-center align-items-center h-100">
+                        <img src="assets/images/delivery-man.png" alt="" class="delivery img-fluid w-75">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(-1rem);
+    }
+
+    50% {
+        transform: translateY(1rem);
+    }
+
+    100% {
+        transform: translateY(-1rem);
+    }
+
+}
+
+
+/* delivery animation */
+@keyframes delivery-fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+}
+
+@keyframes delivery-float {
+    21% {
+        translate: 0 0;
+    }
+
+    40% {
+        translate: 0 -2rem;
+    }
+
+    60% {
+        translate: 0 0;
+    }
+}
+
+@keyframes delivery-accelerate {
+    61% {
+        translate: 0 0;
+    }
+
+    85% {
+        translate: 50rem 0;
+    }
+    100% {
+        translate: 50rem 0;
+    }
+
+}
